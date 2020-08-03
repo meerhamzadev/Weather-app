@@ -1,0 +1,25 @@
+@mixin response {
+    @media (max-width:'600') {
+        @content;
+    }
+}
+.navbar{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: autofit(3,1fr);
+    grid-template-areas: 'image name';
+    align-items: center;
+    @include response{
+        grid-template-areas: '. image name';
+    }
+    .logo-img{
+        height: 4rem;
+        width: 4rem;
+        grid-area: image;
+    }
+    .app-name{
+        font-family: 'Dancing Script', cursive;
+        grid-area: name;
+    }
+}
