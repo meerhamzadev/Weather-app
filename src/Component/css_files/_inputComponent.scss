@@ -10,6 +10,18 @@
     flex-direction : $direction;
 }
 
+@mixin web_responsive {
+    @media (min-width:300px) and (max-width:900px) {
+        @content;
+    }
+}
+
+@mixin web_resp {
+    @media (min-width:740px) and (max-width:900px) {
+        @content;
+    }
+}
+
 .form-body {
     height: 45vh;
 
@@ -47,6 +59,14 @@
             font-size       : 12pt;
             outline         : none;
 
+            @include web_responsive {
+                border-radius: 20px;
+                width        : 70%;
+                padding      : 0.7rem;
+                margin       : 0.5rem;
+                margin-top   : 1.5rem;
+            }
+
             &:hover {
                 background-color: inherit;
                 color           : whitesmoke;
@@ -64,6 +84,15 @@
             padding         : 0.7rem;
             border          : none;
 
+            @include web_resp {
+                margin-top: 1rem;
+            }
+
+            @include web_responsive {
+                width  : 40%;
+                padding: 0.4rem;
+            }
+
             &:hover {
                 background-color: inherit;
                 color           : white;
@@ -72,16 +101,18 @@
             }
         }
     }
+
 }
 
 .data {
+
     @include alignment(column);
 
     .data-body {
-        // padding-bottom: 0.5rem;
+        // padding-bottom: 0.7rem;
         @include alignment(column);
         border          : 2px solid rgb(141, 139, 5);
-        width           : 30%;
+        width           : 50%;
         border-radius   : 20px;
         background-color: burlywood;
         font-family     : 'Mulish', sans-serif;
@@ -91,6 +122,23 @@
             1px -1px 0 black,
             -1px 1px 0 black,
             1px 1px 0 black;
+
+        @include web_responsive {
+            width: 80%;
+        }
+    }
+
+    h3 {
+        padding-bottom   : 0.5rem;
+        // font-size     : 1.4rem;
+
+        @include web_responsive {
+            font-size: 1rem;
+        }
+
+        @include web_resp {
+            font-size: 1.2rem;
+        }
     }
 
     img {

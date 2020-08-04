@@ -56,7 +56,7 @@ const InputComponent = () => {
                         <div className="data-body" >
                             <img src={`http://openweathermap.org/img/w/${state.weather[0].icon}.png`}
                                 alt="something went wrong" />
-                            <h3>{`Country/Region:  ${state.sys.country}`}</h3>
+                            <h3>{`Country / Region:  ${state.sys.country}`}</h3>
                             <h3>{`Maximum temperature:  ${state.main.temp_max} °C`}</h3>
                             <h3>{`Minimum temperature:   ${state.main.temp_min} °C`}</h3>
                             <h3>{`Feeling like:   ${state.main.feels_like} °C`}</h3>

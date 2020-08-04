@@ -32,6 +32,12 @@
   grid-area: name;
 }
 
+@media (min-width: 300px) and (max-width: 350px) {
+  .navbar .app-name {
+    font-size: 18pt;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -99,6 +105,16 @@
   outline: none;
 }
 
+@media (min-width: 300px) and (max-width: 900px) {
+  .form-body .form-setup input {
+    border-radius: 20px;
+    width: 70%;
+    padding: 0.7rem;
+    margin: 0.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
 .form-body .form-setup input:hover {
   background-color: inherit;
   color: whitesmoke;
@@ -113,6 +129,19 @@
   color: black;
   padding: 0.7rem;
   border: none;
+}
+
+@media (min-width: 740px) and (max-width: 900px) {
+  .form-body .form-setup button {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .form-body .form-setup button {
+    width: 40%;
+    padding: 0.4rem;
+  }
 }
 
 .form-body .form-setup button:hover {
@@ -153,7 +182,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   border: 2px solid #8d8b05;
-  width: 30%;
+  width: 50%;
   border-radius: 20px;
   background-color: burlywood;
   font-family: 'Mulish', sans-serif;
@@ -161,6 +190,28 @@
   -webkit-box-shadow: 5px 5px 5px 5px #383535;
           box-shadow: 5px 5px 5px 5px #383535;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .data .data-body {
+    width: 80%;
+  }
+}
+
+.data h3 {
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .data h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 900px) {
+  .data h3 {
+    font-size: 1.2rem;
+  }
 }
 
 .data img {
