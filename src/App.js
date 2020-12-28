@@ -1,15 +1,9 @@
 import React from 'react';
-import Navbar from './Component/Navbar';
-import InputComponent from './Component/InputComponent';
 import './App.css'
-const App = () => (
-  <>
-    <div>
-      <Navbar />
-      <InputComponent />
-    </div>
+import WeatherUpdate from './Component/JSFiles/WeatherUpdates';
 
-  </>
+const App = () => (
+  <WeatherUpdate />
 );
 
 
