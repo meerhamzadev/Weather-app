@@ -1,0 +1,16 @@
+.upperPortion {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#321567), to(#0e061d));
+  background-image: linear-gradient(#321567, #0e061d);
+  height: 33rem;
+}
+
+.upperPortion h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=App.css.map */
