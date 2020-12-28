@@ -1,0 +1,13 @@
+.currentWeather {
+
+    &__temperature {
+        color      : white;
+        font-size  : 7rem;
+        font-weight: normal;
+    }
+
+    &__conditions {
+        color    : #72708f;
+        font-size: 2.5rem;
+    }
+}

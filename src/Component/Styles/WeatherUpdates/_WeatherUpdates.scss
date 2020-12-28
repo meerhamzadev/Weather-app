@@ -1,0 +1,9 @@
+$primaryColor   : white;
+$secondaryColor : #72708f;
+
+.upperPortion {
+    background-image: linear-gradient(#321567, #0e061d);
+    height          : 33rem;
+}
+
+@import './CurrentWeather';
