@@ -1,0 +1,54 @@
+@import './Variables';
+
+.weatherCondition {
+    display        : flex;
+    justify-content: space-around;
+    align-items    : center;
+    color          : $secondaryColor;
+    font-size      : 1.8rem;
+    width          : 40rem;
+
+    @include phoneResponsive {
+        font-size: 2.3rem;
+    }
+
+    @include tabletResponsive {
+        grid-column: 1/4;
+        grid-row   : 2/2;
+    }
+
+    &__Humidity {
+        text-align: center;
+
+        &::before {
+            font-size: 1.6rem;
+
+            @include phoneResponsive {
+                font-size: 1.8rem;
+            }
+
+            content : 'Humidity';
+            display : block;
+        }
+    }
+
+    &__Line {
+        border-left: 2px solid #5c5b6d;
+        height     : 4rem;
+    }
+
+    &__Wind {
+        text-align: center;
+
+        &::before {
+            font-size: 1.6rem;
+
+            @include phoneResponsive {
+                font-size: 1.8rem;
+            }
+
+            content : 'Wind';
+            display : block;
+        }
+    }
+}

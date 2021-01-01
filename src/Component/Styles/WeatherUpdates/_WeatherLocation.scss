@@ -1,0 +1,45 @@
+@import './Variables';
+
+.Location {
+    color       : $primaryColor;
+    justify-self: center;
+    align-self  : center;
+    text-align  : right;
+
+    @include tabletResponsive {
+        grid-column: 1/2;
+        grid-row   : 1/1;
+    }
+
+    @include phoneResponsive {
+        grid-row: 1/1;
+    }
+
+    &__City {
+        font-weight: 300;
+        font-size  : 4.2rem;
+
+        @include phoneResponsive {
+            font-size: 6rem;
+        }
+
+        &::before {
+            font-size   : 5rem;
+            margin-right: 1rem;
+            font-family : "Font Awesome 5 free";
+            font-weight : 900;
+            content     : '\f3c5';
+
+        }
+    }
+
+    &__Country {
+        font-weight: 50;
+        font-style : italic;
+        font-size  : 1.8rem;
+
+        @include phoneResponsive {
+            font-size: 2rem;
+        }
+    }
+}

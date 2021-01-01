@@ -1,6 +1,42 @@
-@import './Component/Styles/WeatherUpdates';
+@mixin tabletResponsive {
+    @media (min-width: 768px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin phoneResponsive {
+    @media (max-width: 420px) {
+        @content;
+    }
+}
+
+
+@import './Component/Styles/WeatherUpdates/WeatherUpdates';
+@import './Component/Styles/WeatherForeCast/WeatherForeCast';
+@import './Component/Styles/WeatherForeCast/ForeCastGraph';
+@import './Component/Styles/WeatherForeCast/HourlyForeCast';
 
 * {
     margin : 0;
     padding: 0;
+}
+
+.WeatherForecastPortion {
+    display              : grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include tabletResponsive {
+        grid-template-columns: 1fr;
+        grid-template-rows   : 1fr 1fr;
+    }
+
+    @include phoneResponsive {
+        margin-top           : 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows   : 1fr 1fr;
+    }
+}
+
+a {
+    text-decoration: none;
 }

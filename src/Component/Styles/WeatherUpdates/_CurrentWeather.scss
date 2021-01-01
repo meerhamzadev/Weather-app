@@ -1,13 +1,22 @@
+@import './Variables';
+
 .currentWeather {
+    align-self: center;
+    text-align: center;
+
+    @include tabletResponsive {
+
+        grid-column: 2/2;
+    }
 
     &__temperature {
-        color      : white;
-        font-size  : 7rem;
+        color      : $primaryColor;
+        font-size  : 8rem;
         font-weight: normal;
     }
 
     &__conditions {
-        color    : #72708f;
+        color    : $secondaryColor;
         font-size: 2.5rem;
     }
 }

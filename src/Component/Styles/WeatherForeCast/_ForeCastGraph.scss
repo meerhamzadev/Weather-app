@@ -1,0 +1,28 @@
+.Graph {
+    display       : flex;
+    flex-direction: column;
+    margin-bottom : 3rem;
+
+    &__Button {
+        padding         : .8rem 1rem;
+        width           : 20rem;
+        align-self      : center;
+        text-align      : center;
+        margin-top      : 2rem;
+        font-size       : 2rem;
+        background-color: blue;
+        color           : white;
+        border          : none;
+        outline         : none;
+
+        @include phoneResponsive {
+            border-radius: 5rem;
+            padding      : 1.2rem;
+        }
+
+        &:hover {
+            box-shadow: 2px 2px 10px 5px #888888;
+            cursor    : pointer;
+        }
+    }
+}

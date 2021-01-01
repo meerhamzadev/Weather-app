@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { WeatherContextWrapper } from './Component/JSFiles/WeatherContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <WeatherContextWrapper>
+      <App />
+    </WeatherContextWrapper>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -11,6 +11,18 @@ html {
   font-size: 62.5%;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 42.5%;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
