@@ -194,6 +194,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 1rem;
     -ms-grid-row: 1;
     grid-row: 1/1;
@@ -235,6 +238,7 @@
         -ms-flex-direction: row;
             flex-direction: row;
     width: 100%;
+    max-width: 98%;
     gap: 1rem;
     -ms-flex-pack: distribute;
         justify-content: space-around;
