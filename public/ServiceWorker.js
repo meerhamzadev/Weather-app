@@ -3,9 +3,10 @@ const urlsToCache = [
     'index.html',
     'offline.html'
 ];
+const self = this;
 
 // Install ServiceWorker
-this.addEventListener('install', event => {
+self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(cacheName)
             .then(cache => cache.addAll(urlsToCache))
@@ -15,7 +16,7 @@ this.addEventListener('install', event => {
 
 // Listen ServiceWorker
 
-this.addEventListener('fetch', event => {
+self.addEventListener('fetch', event => {
     event.respondWith(
         caches.match(event.request)
             .then(() => {
@@ -27,7 +28,7 @@ this.addEventListener('fetch', event => {
 
 // Run Service Worker
 
-this.addEventListener('activate', event => {
+self.addEventListener('activate', event => {
     const cacheWhiteList = [];
     cacheWhiteList.push(cacheName);
     event.waitUntil(

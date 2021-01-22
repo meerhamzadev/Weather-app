@@ -20,7 +20,7 @@ function WeatherForcast() {
                 weatherData.forecast.forecastday.slice(1, weatherData.forecast.forecastday.length).map(forecastday => {
                     return (
 
-                        <div className="forecastCard">
+                        <div className="forecastCard" key={forecastday.day.condition.text} >
                             <h1 className="forecastCard__Day" >{day[new Date(forecastday.date).getDay()]}</h1>
                             <div className="forecastCard__Img">
                                 <img src={forecastday.day.condition.icon}
