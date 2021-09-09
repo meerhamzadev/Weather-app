@@ -1,0 +1,25 @@
+.weather-search {
+    align-self  : center;
+    justify-self: center;
+
+    input {
+        padding: .5rem;
+        width  : 25rem;
+        outline: none;
+    }
+
+    button {
+        margin-left     : .2rem;
+        border          : none;
+        outline         : none;
+        padding         : .7rem 1rem;
+        font-weight     : bold;
+        color           : white;
+        background-color: rgb(11, 167, 11);
+
+        &:hover {
+            background-color: rgb(11, 105, 11);
+            cursor          : pointer;
+        }
+    }
+}

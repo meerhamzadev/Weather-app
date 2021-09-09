@@ -383,6 +383,35 @@
   }
 }
 
+.weather-search {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.weather-search input {
+  padding: .5rem;
+  width: 25rem;
+  outline: none;
+}
+
+.weather-search button {
+  margin-left: .2rem;
+  border: none;
+  outline: none;
+  padding: .7rem 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #0ba70b;
+}
+
+.weather-search button:hover {
+  background-color: #0b690b;
+  cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;
