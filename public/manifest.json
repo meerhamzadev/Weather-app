@@ -7,6 +7,12 @@
       "sizes": "1024x1024",
       "purpose": "maskable",
       "type": "image/png"
+    },
+    {
+      "src": "logo-144.png",
+      "sizes": "144x144",
+      "purpose": "any",
+      "type": "image/png"
     }
   ],
   "start_url": ".",
